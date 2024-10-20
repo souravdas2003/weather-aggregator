@@ -18,12 +18,14 @@ A real-time weather monitoring system using Node.js and MongoDB. The system retr
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 cd weather-monitoring-system
+
 2. Install Dependencies
 Run the following command to install all required dependencies:
 
 bash
 
 npm install
+
 3. Configure Environment Variables
 Create a .env file in the root of the project and add the following:
 
@@ -33,6 +35,7 @@ OPEN_WEATHER_MAP_API_KEY=your_openweathermap_api_key
 MONGO_URI=mongodb://localhost:27017/weather-db
 OPEN_WEATHER_MAP_API_KEY: You can get this from OpenWeatherMap by signing up for a free account.
 MONGO_URI: You can either set up a local MongoDB server or use a cloud service like MongoDB Atlas.
+
 4. Start the Application
 Run the following command to start the server:
 
@@ -54,6 +57,7 @@ Test Cases:
 System Setup: Ensure the system connects to MongoDB and retrieves data from OpenWeatherMap.
 Temperature Conversion: Check that temperatures are converted from Kelvin to Celsius/Fahrenheit based on configuration.
 Daily Summary Calculation: Verify the correct calculation of average, max, and min temperatures, and the dominant weather condition.
+
 6. Alerts
 Alerts are configured to trigger if the temperature exceeds user-defined thresholds.
 You can extend the system to send email alerts or display notifications.
@@ -65,18 +69,6 @@ Axios: HTTP client for making API requests.
 OpenWeatherMap API: Source for weather data.
 License
 This project is licensed under the MIT License.
-
-sql
-
-
-### 6. Exclude Sensitive Files from Git
-
-Make sure your sensitive files such as `.env` and `node_modules` are excluded from being tracked in the repository:
-
-```bash
-git rm -r --cached node_modules
-git rm --cached .env
-Now, both node_modules and .env will be ignored by Git, and they won't be pushed to GitHub.
 
 7. Pushing Changes
 Whenever you make changes to the code, you can push them using the following commands:
